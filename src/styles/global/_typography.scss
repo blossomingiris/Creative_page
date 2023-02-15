@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;800&display=swap');
+
+:root {
+  --font-size-xs: 16px;
+  --font-size-s1: 18px;
+  --font-size-s2: 20px;
+  --font-size-md: 56px;
+  --font-size-lg: 80px;
+
+  --font-family-commissioner: 'Commissioner', sans-serif;
+}
+
+.commissioner {
+  font-family: var(----font-family-commissioner);
+  font-style: normal;
+}
+
+.commissioner--extra-bold-lg-black {
+  font-weight: 800;
+  font-size: var(--font-size-lg);
+  line-height: 88px;
+  color: var(--text-black);
+}
+
+.commissioner--extra-bold-md-black {
+  font-weight: 800;
+  font-size: var(--font-size-md);
+  line-height: 64px;
+  color: var(--text-black);
+}
+
+.commissioner--extra-bold-md-white {
+  font-weight: 800;
+  font-size: var(--font-size-md);
+  line-height: 64px;
+  color: var(--text-white);
+}
+
+.commissioner--regular-s1-black {
+  font-weight: 400;
+  font-size: var(----font-size-s1);
+  line-height: 32px;
+  color: var(--text-black);
+}
+
+.commissioner--regular-s1-white {
+  font-weight: 400;
+  font-size: var(----font-size-s1);
+  line-height: 32px;
+  color: var(--text-white);
+}
+
+.commissioner--regular-s2-black {
+  font-weight: 800;
+  font-size: var(--font-size-s2);
+  line-height: 32px;
+  color: var(--text-black);
+}
