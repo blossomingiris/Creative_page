@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;800&display=swap');
-
 :root {
   --font-size-xs: 16px;
   --font-size-s1: 18px;
@@ -10,13 +8,16 @@
   --font-family-commissioner: 'Commissioner', sans-serif;
 }
 
-.commissioner {
-  font-family: var(----font-family-commissioner);
-  font-style: normal;
+h1,
+h2,
+h3,
+body {
+  font-family: var(--font-family-commissioner);
 }
 
 .commissioner--extra-bold-lg-black {
   font-weight: 800;
+  font-style: normal;
   font-size: var(--font-size-lg);
   line-height: 88px;
   color: var(--text-black);
@@ -24,6 +25,7 @@
 
 .commissioner--extra-bold-md-black {
   font-weight: 800;
+  font-style: normal;
   font-size: var(--font-size-md);
   line-height: 64px;
   color: var(--text-black);
@@ -31,28 +33,67 @@
 
 .commissioner--extra-bold-md-white {
   font-weight: 800;
+  font-style: normal;
   font-size: var(--font-size-md);
   line-height: 64px;
-  color: var(--text-white);
+  color: var(--white);
+}
+
+.commissioner--extra-bold-md-black {
+  font-weight: 800;
+  font-style: normal;
+  font-size: var(--font-size-md);
+  line-height: 64px;
+  color: var(--text-black);
+}
+
+.commissioner--extra-bold-s1-white {
+  font-weight: 800;
+  font-style: normal;
+  font-size: var(--font-size-s1);
+  line-height: 32px;
+  color: var(--white);
 }
 
 .commissioner--regular-s1-black {
   font-weight: 400;
-  font-size: var(----font-size-s1);
+  font-style: normal;
+  font-size: var(--font-size-s1);
   line-height: 32px;
   color: var(--text-black);
 }
 
 .commissioner--regular-s1-white {
   font-weight: 400;
-  font-size: var(----font-size-s1);
+  font-style: normal;
+  font-size: var(--font-size-s1);
   line-height: 32px;
-  color: var(--text-white);
+  color: var(--white);
 }
 
-.commissioner--regular-s2-black {
-  font-weight: 800;
-  font-size: var(--font-size-s2);
+.commissioner--regular-xs-white {
+  font-weight: 400;
+  font-size: var(--font-size-xs);
   line-height: 32px;
-  color: var(--text-black);
+  color: var(--white);
+}
+
+.commissioner--extra-bold-xs-white {
+  font-weight: 800;
+  font-size: var(--font-size-xs);
+  line-height: 20px;
+  color: var(--white);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .commissioner--extra-bold-lg-black {
+    font-size: var(--font-size-md);
+    line-height: 56px;
+  }
+
+  .commissioner--regular-xs-white,
+  .commissioner--regular-s1-black {
+    font-size: 15px;
+    line-height: 25px;
+  }
 }

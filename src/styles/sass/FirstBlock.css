@@ -1,0 +1,1 @@
+.content__container{display:flex;height:984px;background:var(--bg-black)}.image--main{flex:1}.image--main img{-o-object-fit:cover;object-fit:cover}.content{flex:1;display:flex}.content__image--red-wave{width:135px;height:61px}.content--accent-color{color:var(--red)}.content__block{display:flex;flex-direction:column;gap:43px}
