@@ -4,8 +4,7 @@
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/blossomingiris/Creative_page)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Here](https://creative-agency-single-page-site.onrender.com/)
 
 ### Built with
 
@@ -13,7 +12,8 @@
 - CSS custom properties
 - Flexbox
 - [React](https://reactjs.org/) - JS library
-- [Sass](https://sass-lang.com/) - For CSS styles
+- [Sass](https://sass-lang.com/) - for CSS styles
+- react-icons - for icons
 
 ### Deployed on
 
@@ -22,3 +22,4 @@
 ## Author
 
 - Website - [Xenia Rachouti](https://xenia-rachouti.onrender.com/)
+
