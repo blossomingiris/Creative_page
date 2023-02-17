@@ -19,10 +19,10 @@
 
 - [onRender](https://render.com/)
 
-###Usage: 
+### Usage: 
 
 To navigate the slider, you have the option of using either the mouse or the keyboard, by pressing the left or right arrow keys.
 
-## Author
+### Author
 
 - Website - [Xenia Rachouti](https://xenia-rachouti.onrender.com/)
