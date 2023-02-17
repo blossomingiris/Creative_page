@@ -13,7 +13,7 @@
 - Flexbox
 - [React](https://reactjs.org/) - JS library
 - [Sass](https://sass-lang.com/) - for CSS styles
-- react-icons - for icons
+- [react-icons](https://react-icons.github.io/react-icons) - icons library for React
 
 ### Deployed on
 
