@@ -1,42 +1,60 @@
-import './Header.scss'
+import { useState } from 'react'
 
 import logo from '../../assets/desktop/logo.svg'
+import icon_cross from '../../assets/mobile/icon-cross.svg'
+import icon_hamburger from '../../assets/mobile/icon-hamburger.svg'
+
+import './Header.scss'
 
 function Header() {
-  // return (
-  //   <header className='header'>
-  //     <div className='logo'>
-  //       <img src={logo} alt='creative agency logo' />
-  //     </div>
-  //     <nav className='navbar'>
-  //       <ul className='navbar__links'>
-  //         <li className='commissioner--regular-xs-white'>About</li>
-  //         <li className='commissioner--regular-xs-white'>Service</li>
-  //         <li className='commissioner--regular-xs-white'>Projects</li>
-  //       </ul>
-  //       <button className='navbar__button commissioner--extra-bold-xs-white'>
-  //         Schedule a Call
-  //       </button>
-  //     </nav>
-  //   </header>
-  // )
+  //toggle menu image for small screens
+  const [toggleMenu, setToggleMenu] = useState(false)
+  const [mobileMenu, setMobilMenu] = useState(false)
+
+  const handleToggleMenu = () => {
+    setToggleMenu(!toggleMenu)
+    setMobilMenu(!mobileMenu)
+  }
+
   return (
     <header className='header'>
-      <div className='group-11'>
+      <div className='header__block'>
         <img src={logo} alt='creative agency logo' />
+        <div
+          className='icon_hamburger'
+          onClick={handleToggleMenu}
+          style={{
+            backgroundImage: `url(${toggleMenu ? icon_cross : icon_hamburger})`,
+          }}
+        />
       </div>
-      <nav className='rectangle'>
-        <ul className='group-12'>
-          <li className='commissioner--regular-xs-white'>About</li>
-          <li className='commissioner--regular-xs-white'>Service</li>
-          <li className='commissioner--regular-xs-white'>Projects</li>
-        </ul>
-        <div className='group-14'>
-          <button className='commissioner--extra-bold-xs-white'>
-            Schedule a Call
-          </button>
+      <div className='header__rectangle'></div>
+      <ul className='navbar'>
+        <li className='commissioner--regular-xs-white'>About</li>
+        <li className='commissioner--regular-xs-white'>Service</li>
+        <li className='commissioner--regular-xs-white'>Projects</li>
+      </ul>
+      <div className='header__button'>
+        <button className='commissioner--extra-bold-xs-white'>
+          Schedule a Call
+        </button>
+      </div>
+      {mobileMenu ? (
+        <div className='navbar--mobile'>
+          <ul className='navbar--mobile-list'>
+            <li className='navbar--mobile-li'>About</li>
+            <li className='navbar--mobile-li'>Service</li>
+            <li className='navbar--mobile-li'>Projects</li>
+          </ul>
+          <div className='navbar--mobile-button'>
+            <button className='commissioner--extra-bold-xs-white'>
+              Schedule a Call
+            </button>
+          </div>
         </div>
-      </nav>
+      ) : (
+        ''
+      )}
     </header>
   )
 }

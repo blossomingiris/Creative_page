@@ -1,64 +1,89 @@
-import image_strategic from '../../assets/desktop/image-strategic.jpg'
 import bg_pattern_wave_red from '../../assets/desktop/bg-pattern-wave-red.svg'
 
 import './MainContent.scss'
+import Subtitle from '../Subtitle/Subtitle'
+import Slider from '../Slider/Slider'
 
 function MainContent() {
+  const subtitles = [
+    {
+      id: 1,
+      number: '01',
+      title: 'Brand Strategy',
+      desc: 'Brand strategy is critical for long-term success. Outshining competitors and capturing the target audience are key',
+      className: 'subtitle',
+    },
+    {
+      id: 2,
+      number: '02',
+      title: 'Brand Design',
+      desc: 'Keeping the brand design unique and meaningful helps in communicating the brand’s timeless value effectively.',
+      className: 'subtitle copy',
+    },
+    {
+      id: 1,
+      number: '03',
+      title: 'Web Design',
+      desc: 'A beautifully crafted website is the best tool for brand awareness, and ultimately results in increased revenues.',
+      className: 'subtitle copy-2',
+    },
+  ]
+
   return (
-    <main className='content__container'>
-      <section className='block-1'>
-        <div className='block-1__image'>
-          <img src={image_strategic} alt='strategic' />
-        </div>
-        <div className='block-1__content'>
-          <div className='block-1__content--overlay'>
-            <div className='block-1__image--red-wave'>
-              <img src={bg_pattern_wave_red} alt='red wave' />
-            </div>
-            <div>
-              <div className='block-1__content--text-wrapper'>
-                <h2 className='commissioner--extra-bold-md-white'>
-                  <span className='accent-color'>Design</span> is strategic.
-                </h2>
-                <p className='commissioner--regular-s1-white'>
-                  “A well-crafted design strategy consistently produces desired
-                  outcomes and brand awareness. We are firm believers that
-                  success lies in creative collaboration with our clients.”
-                </p>
-                <button>Schedule a Call</button>
-              </div>
+    <main>
+      <div className='flex-container-row'>
+        <div className='content__image'></div>
+        <div>
+          <div className='rectangle--black'></div>
+          <div className='group-4 flex-container'>
+            <img
+              src={bg_pattern_wave_red}
+              alt='red wave'
+              className='image__wave--red'
+            />
+            <div className='content commissioner--extra-bold-md-white'>
+              <h2 className='design-is-strategic'>
+                <div className='flex-container-column'>
+                  <span className='accent-color--red'>Design</span>
+                  <span>is strategic</span>
+                </div>
+              </h2>
+              <p className='commissioner--regular-s1-white'>
+                “A well-crafted design strategy consistently produces desired
+                outcomes and brand awareness. We are firm believers that success
+                lies in creative collaboration with our clients.”
+              </p>
+              <button className='button-1'>
+                <div className='schedule-a-call'>Schedule a Call</div>
+                <div className='line'></div>
+              </button>
             </div>
           </div>
         </div>
-      </section>
-      <section className='block-2'>
-        <div className='block-2__title'>
-          <h2 className='commissioner--extra-bold-md-black'>
-            Our approach for creating a winning brand
-          </h2>
-        </div>
-        <div className='block-2--bg-red'>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </section>
+      </div>
+      <p className='our_aproach_for commissioner--extra-bold-md-black'>
+        Our approach for creating a winning brand
+      </p>
+      <div className='rectangle--red'></div>
+      {subtitles.map((subtitle) => (
+        <Subtitle key={subtitle.key} {...subtitle} />
+      ))}
+      <Slider />
+      <div className='contacts'>
+        <img
+          src={bg_pattern_wave_red}
+          alt='red wave'
+          className='image__wave--red-2'
+        />
+        <h2 className='lets__build_something commissioner--extra-bold-md-black'>
+          Let's build something great together.
+        </h2>
+        <button className='button-2 commissioner--extra-bold-xs-white'>
+          Schedule a Call
+        </button>
+      </div>
     </main>
   )
 }
 
 export default MainContent
-
-{
-  /* <div className='image--main'>
-        <img src={image_strategic} alt='strategic' />
-      </div>
-      <div className='content'>
-        <div className='content__image--red-wave'>
-          <img src={bg_pattern_wave_red} alt='red wave' />
-        </div>
-        <div className='content__block'>
-
-        </div>
-      </div> */
-}

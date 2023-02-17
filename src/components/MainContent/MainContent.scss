@@ -1,111 +1,319 @@
-// .content__container {
-//   display: flex;
-//   height: 984px;
-//   background: var(--bg-black);
-// }
-
-// .image--main {
-//   flex: 1;
-
-//   & img {
-//     object-fit: cover;
-//   }
-// }
-
-// .content {
-//   flex: 1;
-//   display: flex;
-
-//   &__image--red-wave {
-//     width: 135px;
-//     height: 61px;
-//   }
-
-//   &--accent-color {
-//     color: var(--red);
-//   }
-
-//   &__block {
-//     display: flex;
-//     flex-direction: column;
-//     gap: 43px;
-//   }
-// }
-
-.block-1 {
-  height: 984px;
-  position: relative;
-  display: flex;
-  background-color: var(--bg-black);
-
-  &__content {
-    flex: 1;
-    display: flex;
-    position: relative;
-
-    &--overlay {
-      position: absolute;
-      width: 666px;
-      z-index: 0;
-      display: flex;
-      gap: 84px;
-    }
-
-    &--text-wrapper {
-    }
-  }
-
-  &__image {
-    flex: 1;
-  }
-
-  .accent-color {
-    color: var(--red);
-  }
-
-  &__image--red-wave {
-    width: 135px;
-    height: 61px;
-    position: relative;
-    top: 50px;
-    left: -50px;
-  }
-}
-
-.block-2 {
-  position: relative;
-  display: flex;
-  background-color: var(--white);
-}
-
-.block-2__title {
-  flex: 1;
-  position: relative;
-  z-index: 1;
-  padding: 165px;
-
-  & h2 {
-    width: 540px;
-  }
-}
-
-.block-2--bg-red {
+.content__image {
   position: absolute;
-  right: 0;
-  top: -200px;
+  top: 978px;
+  width: 735px;
+  height: 984px;
+  background-image: url('../../assets/desktop/image-strategic.jpg');
+}
+
+.rectangle--black {
+  position: absolute;
+  height: 784px;
+  top: 978px;
+  left: 735px;
+  width: 705px;
+  background-color: var(--bg-black);
+}
+
+.group-4 {
+  position: absolute;
+  align-items: flex-start;
+  display: flex;
+  height: 384px;
+  left: 669px;
+  min-width: 666px;
+  top: 1179px;
+  gap: 86px;
+}
+
+.image__wave--red {
+  height: 61px;
+  margin-top: 34px;
+  width: 135px;
+}
+
+.content {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  width: 449px;
+  height: 500px;
+  gap: 43px;
+}
+
+.design-strategic {
+  min-height: 133px;
+  width: 410px;
+}
+
+//button
+.button-1 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 32px;
+  justify-content: center;
+  overflow: hidden;
+  width: 124px;
+  cursor: pointer;
+}
+
+.schedule-a-call {
+  color: var(--red);
+  font-family: var(--font-family-commissioner);
+  font-size: var(--font-size-s1);
+  font-weight: 800;
+  line-height: normal;
+  min-height: 22px;
+}
+
+.line {
+  background-color: var(--red);
+  height: 4px;
+  width: 126px;
+}
+
+.button-1:hover .schedule-a-call {
+  color: var(--red-on-hover);
+}
+
+.button-1:hover .line {
+  background-color: var(--red-on-hover);
+}
+
+.rectangle--red {
+  position: absolute;
   width: 895px;
   height: 1100px;
+  left: 545px;
+  top: 1762px;
+  right: 0;
   background-color: var(--red);
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .block-1 {
-    height: 538px;
+.our_aproach_for {
+  position: absolute;
+  width: 540px;
+  height: 192px;
+  left: 165px;
+  top: 2162px;
+  z-index: 1;
+}
+
+//footer
+.lets__build_something {
+  position: absolute;
+  width: 635px;
+  height: 133px;
+  left: 165px;
+  top: 3710px;
+}
+
+.image__wave--red-2 {
+  position: absolute;
+  width: 134px;
+  height: 60px;
+  left: -67px;
+  top: 3744px;
+}
+
+//button
+
+.button-2 {
+  position: absolute;
+  width: 199px;
+  height: 64px;
+  left: 1076px;
+  top: 3742px;
+  background-color: var(--red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--red-on-hover);
+  }
+}
+
+.accent-color--red {
+  color: var(--red);
+}
+
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 768px) {
+  .content__image {
+    width: 378px;
+    height: 658px;
+    left: 0px;
+    top: 784px;
+    background-image: url('../../assets/tablet/image-strategic.jpg');
   }
 
-  .block-2--bg-red {
-    height: 797px;
+  .rectangle--black {
+    width: 390px;
+    height: 538px;
+    left: 378px;
+    top: 784px;
+  }
+
+  .group-4 {
+    width: 382px;
+    height: 298px;
+    left: 346px;
+    top: 904px;
+    gap: 38px;
+  }
+
+  .image__wave--red {
+    width: 63px;
+    height: 29px;
+  }
+
+  .content {
+    height: 298px;
+    left: 346px;
+    top: 904px;
+    width: 281px;
+    gap: 32px;
+  }
+
+  .design-strategic {
+    width: 281px;
+    height: 80px;
+    left: 447px;
+    top: 904px;
+  }
+
+  //button
+  .button-1 {
+    width: 103px;
+    height: 29px;
+    left: 447px;
+    top: 1173px;
+  }
+
+  .schedule-a-call {
+    height: 18px;
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .line {
+    width: 103px;
+    height: 2px;
+    margin-top: -2px;
+  }
+
+  .rectangle--red {
     width: 438px;
-    top: -100px;
+    height: 797px;
+    left: 330px;
+    top: 1322px;
+  }
+
+  .our_aproach_for {
+    width: 281px;
+    height: 120px;
+    left: 39px;
+    top: 1568px;
+  }
+
+  .lets__build_something {
+    width: 398px;
+    height: 80px;
+    left: 39px;
+    top: 2661px;
+  }
+
+  .image__wave--red-2 {
+    display: none;
+  }
+
+  .button-2 {
+    left: 529px;
+    top: 2669px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .content__image {
+    width: 100%;
+    height: 200px;
+    left: 0px;
+    top: 818px;
+    background-image: url('../../assets/mobile/image-strategic.jpg');
+  }
+
+  .rectangle--black {
+    width: 100%;
+    height: 377px;
+    left: 0px;
+    top: 1018px;
+  }
+
+  .group-4 {
+    width: 100%;
+    height: 233px;
+    left: 24px;
+    top: 970px;
+  }
+
+  .image__wave--red {
+    width: 63px;
+    height: 29px;
+  }
+
+  .content {
+    width: 327px;
+    height: 260px;
+  }
+
+  .button-1 {
+    margin-top: 26px;
+  }
+
+  .rectangle--red {
+    width: 100%;
+    height: 918px;
+    left: 0px;
+    top: 1395px;
+  }
+
+  .our_aproach_for {
+    width: 327px;
+    height: 120px;
+    left: 24px;
+    top: 1491px;
+    color: var(--white) !important;
+  }
+
+  //footer
+  .lets__build_something {
+    width: 327px;
+    height: 80px;
+    left: 24px;
+    top: 3089px;
+  }
+
+  .button-2 {
+    width: 199px;
+    height: 64px;
+    left: 24px;
+    top: 3216px;
+  }
+
+  .flex-container-column {
+    flex-direction: row;
+    gap: 8px;
   }
 }

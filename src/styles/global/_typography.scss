@@ -71,6 +71,14 @@ body {
   color: var(--white);
 }
 
+.commissioner--extra-bold-s2-white {
+  font-weight: 800;
+  font-style: normal;
+  font-size: var(--font-size-s2);
+  line-height: 32px;
+  color: var(--white);
+}
+
 .commissioner--regular-xs-white {
   font-weight: 400;
   font-size: var(--font-size-xs);
@@ -85,15 +93,30 @@ body {
   color: var(--white);
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
   .commissioner--extra-bold-lg-black {
     font-size: var(--font-size-md);
     line-height: 56px;
   }
 
   .commissioner--regular-xs-white,
-  .commissioner--regular-s1-black {
+  .commissioner--extra-bold-s2-white,
+  .commissioner--regular-s1-black,
+  .commissioner--regular-s1-white {
     font-size: 15px;
     line-height: 25px;
+  }
+
+  .commissioner--extra-bold-md-white,
+  .commissioner--extra-bold-md-black {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .commissioner--extra-bold-lg-black {
+    font-size: 40px;
+    line-height: 40px;
   }
 }

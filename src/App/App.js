@@ -1,15 +1,16 @@
 import Header from '../components/Header/Header'
 import Hero from '../components/Hero/Hero'
+import MainContent from '../components/MainContent/MainContent'
+
 import './App.scss'
-// import MainContent from '../components/MainContent/MainContent'
 
 function App() {
   return (
-    <>
+    <div className='screen'>
       <Header />
       <Hero />
-      {/* <MainContent /> */}
-    </>
+      <MainContent />
+    </div>
   )
 }
 

@@ -1,37 +1,33 @@
-.hero {
+.flex-container {
   display: flex;
-  position: relative;
+}
+
+.hero__image {
+  position: absolute;
+  width: 895px;
+  height: 800px;
+  left: 545px;
+  top: 178px;
+  background-image: url('../../assets/desktop/image-hero.jpg');
 }
 
 .hero__wrapper {
+  position: absolute;
   width: 730px;
   height: 528px;
+  left: 165px;
+  top: 290px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  margin: 112px 0 0 165px;
+  justify-content: flex-start;
   gap: 39px;
-}
-
-.hero__container--center {
-  display: flex;
-  align-self: flex-end;
-  height: 800px;
 }
 
 .we-specialize-in-vis {
   width: 540px;
 }
 
-.bitmap {
-  object-fit: cover;
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  z-index: -1;
-}
-
-.group-3 {
+.hero__button {
   width: 177px;
   height: 72px;
   background-color: var(--red);
@@ -41,23 +37,61 @@
   cursor: pointer;
 
   &:hover {
-    background-color: #ff9393;
+    background-color: var(--red-on-hover);
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .hero__container--center {
+@media only screen and (max-width: 768px) {
+  .hero__image {
+    width: 438px;
     height: 606px;
+    left: 330px;
+    top: 178px;
+    background-image: url('../../assets/tablet/image-hero.jpg');
   }
 
   .hero__wrapper {
     width: 398px;
-    height: 438px;
-    margin: 77px 0 0 39px;
-    gap: 19px;
+    height: 379px;
+    left: 39px;
+    top: 255px;
+    gap: 20px;
+  }
 
-    .we-specialize-in-vis {
-      width: 398px;
-    }
+  .we-specialize-in-vis {
+    width: 398px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .flex-container-row {
+    flex-direction: column;
+  }
+
+  .hero__image {
+    width: 375px;
+    height: 200px;
+    left: 0px;
+    top: 110px;
+    background-image: url('../../assets/mobile/image-hero.jpg');
+  }
+
+  .hero__wrapper {
+    width: 327px;
+    height: 364px;
+    left: 24px;
+    top: 366px;
+  }
+
+  .we-specialize-in-vis {
+    width: 327px;
+    height: 100px;
+    left: 24px;
+    top: 510px;
+  }
+
+  //button
+  .hero__button {
+    margin-top: 25px;
   }
 }
