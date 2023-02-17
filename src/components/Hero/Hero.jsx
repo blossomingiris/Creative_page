@@ -1,4 +1,3 @@
-import image_hero from '../../assets/desktop/image-hero.jpg'
 import './Hero.scss'
 
 function Hero() {

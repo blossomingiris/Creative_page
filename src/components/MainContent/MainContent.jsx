@@ -21,7 +21,7 @@ function MainContent() {
       className: 'subtitle copy',
     },
     {
-      id: 1,
+      id: 3,
       number: '03',
       title: 'Web Design',
       desc: 'A beautifully crafted website is the best tool for brand awareness, and ultimately results in increased revenues.',
@@ -66,7 +66,7 @@ function MainContent() {
       </p>
       <div className='rectangle--red'></div>
       {subtitles.map((subtitle) => (
-        <Subtitle key={subtitle.key} {...subtitle} />
+        <Subtitle key={subtitle.id} {...subtitle} />
       ))}
       <Slider />
       <div className='contacts'>
